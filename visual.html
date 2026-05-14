@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="髙橋仁美のポートフォリオ">
+<link rel="shortcut icon" href="img/favicon.ico">
+<title>HITOMI　PORTFOLIO</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!--jQuery本体-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/function.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="is-visual-page">
+<div id="wrapper">
+
+	<header id="home">
+		<nav class="follow_nav">
+			<ul>
+				<li class="line" title="WORKS"><a href="index.html#works" alt="btn">WORKS</a></li>
+				<li class="line" title="ABOUT"><a href="index.html#about" alt="btn">ABOUT</a></li>
+				<li class="line" title="CONTACT"><a href="index.html#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+		<h1 class="page_top"><a href="index.html#home" alt="btn">TAKAHASHI HITOMI</a></h1>
+
+		<h2 class="page_right_title visual"><a href="#" alt="ビジュアルの世界">Visualの世界</a></h2>
+	</header>
+
+	<section id="conteiner" class="scroll-fade">
+		<div>
+			<div class="imgBox"><img src="img/visual_01.jpg" alt="pic"></div>
+		</div>
+		<div class="textBox_works">
+			<h3>CONCEPT</h3>
+			
+			<p>忙しい日常から一歩離れ、静かで上質な「大人のひととき」を味わうお茶会。明朝体をベースに、柔らかく上品な文字組みに色数を抑え、静けさと余韻を感じさせる構成。</p>
+			<h3 class="blue">TARGET</h3>
+			<p>40代から60代の女性（文化的な嗜みを楽しむ層、ゆったりとした時間を大切にする層）</p>
+		</div>
+
+	</section>
+
+	<section id="conteiner" class="reverse scroll-fade">
+		<div class="textBox_works">
+			<h3>CONCEPT</h3>
+			
+			<p>セラミックフェスタ  ― 日常に、 凛とした器を ―GINZA SIX Webサイトのトップキービジュアルとして展開。セラミック作品を主役に据え、アートフェアのような佇まいで催事情報を訴求する。</p>
+			<h3 class="blue">TARGET</h3>
+			<p>GINZA SIXを利用する30～40代独身女性</p>
+		</div>
+
+		<div class="imgBox"><img src="img/visual_02.jpg" alt="pic"></div>
+
+	</section>
+
+	<section id="conteiner" class="scroll-fade"">
+		<div class="imgBox">
+			<img src="img/visual_03.jpg" alt="pic">
+			
+		</div>
+		<div class="textBox_works">
+			<h3>CONCEPT</h3>
+			<p>焼き菓子屋さんohanaの焼き菓子と紅茶のセット内容は（フィナンシェ3個／マドレーヌ3個／クッキー16枚1袋／バタフライティー６袋）　大人の女性の集まりで楽しめるセットを想定している。
+</p>
+			<h3 class="blue">TARGET</h3>
+			<p>20代後半～40代の働く女性（友人宅への手土産・ちょっとした集まり用）</p>
+		</div>
+
+		
+	</section>
+
+	<div class="topBtn_works">
+		<a href="index.html"><img src="img/topBtn.jpg" alt="btn"></a>
+	</div>
+</div><!------------ wrapper --------------->
+	<footer>
+		<nav class="link">
+			<ul>
+				<li class="line"><a href="index.html#works" alt="btn">WORKS</a></li>
+				<li class="line"><a href="index.html#about" alt="btn">ABOUT</a></li>
+				<li class="line"><a href="index.html#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+	</footer>
+	<script>
+		$(function(){
+		  $('a[href^="#"]').click(function(){
+		    var speed = 500;
+		    var href= $(this).attr("href");
+		    var target = $(href == "#" || href == "" ? 'html' : href);
+		    var position = target.offset().top-100;
+		    
+		    $("html, body").animate({scrollTop:position}, speed, "swing");
+		    return false;
+		  });
+		});
+</script>
+
+</body>
+
+</html>

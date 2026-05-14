@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="髙橋仁美のポートフォリオ">
+<link rel="shortcut icon" href="img/favicon.ico">
+<title>HITOMI　PORTFOLIO</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!--jQuery本体-->
+<!--<script src="js/jquery.bxslider.min.js"></script>-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/function.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<header id="home">
+		<nav class="follow_nav">
+			<ul>
+				<li class="line" title="WORKS"><a href="#works" alt="btn">WORKS</a></li>
+				<li class="line" title="ABOUT"><a href="#about" alt="btn">ABOUT</a></li>
+				<li class="line" title="CONTACT"><a href="#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+		<h1 class="page_top"><a href="#home" alt="topBtn">TAKAHASHI HITOMI</a></h1>
+	</header>
+
+	<section id="top" class="scroll-fade">
+	<div id="slider" class="swiper main-slider"> <div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="img/key_01.jpg" alt="illust"></div>
+				<div class="swiper-slide"><img src="img/key_02.jpg" alt="illust"></div>
+				<div class="swiper-slide"><img src="img/key_03.jpg" alt="illust"></div>
+			</div><!----------- slider ---------->
+			<div class="swiper-pagination"></div>
+			
+		</div><div class="textBox_works">
+			<h3 class="red">CONCEPT</h3>
+			<p>情報や想いを整理し、見る人に心地よく伝わるデザインを目指しています。<br>
+		見た目の美しさだけでなく、目的やターゲットに合わせて構成や配色を設計し、伝わる形に落とし込むことを大切にしています。絵本のように、静かでやさしく、温度の伝わる表現を意識しています。</p>
+		</div>
+
+	</section>
+
+	<section id="works" class="scroll-fade">
+		<div class="highlight_works">
+			<div class="textBox_works">
+			<div class="title_area">
+				<h2>WORKS</h2>
+				<h4>デザインの世界一覧</h4>
+			</div>
+			
+			<div class="worksBtn">
+				<a href="book.html" alt="絵本の世界"><img src="img/worksBtn_01.png"></a>
+				<a href="font.html" alt="フォントの世界"><img src="img/worksBtn_02.png"></a>
+				<a href="visual.html" alt="ビジュアルの世界"><img src="img/worksBtn_03.png"></a>
+				<a href="clinic.html" alt="クリニックの世界"><img src="img/worksBtn_04.png"></a>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="scroll-fade">
+		
+			<div class="title_area">
+				<h2>ABOUT</h2>
+				<h4>たかはし　ひとみ　とは</h4>
+			</div>
+			<div class="highlight_about">
+				<div class="textBox">
+					<div class="me"><img src="img/about_01.jpg"alt="me"></div>
+					<p>好奇心旺盛で新しいことに挑戦するのが好きです。<br>
+			一つひとつの制作に丁寧に向き合い、相手の意図や目的を考えながらデザインすることを大切にしています。<br>
+			これまでの経験を活かしながら見る人にとって分かりやすく、心地よく伝わるデザインを目指しています。		</p>
+					
+					<div class="illustration"><a href="illustration.html"alt="btn">illustration</a></div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="scroll-fade">
+		<div class="textBox_works">
+			<div class="title_area">
+				<h2>CONTACT</h2>
+				<h4>連絡先　と　SNS</h4>
+			</div>
+			<div class="contactText">
+				<div class="instaImg"><a href="https://www.instagram.com/ssinz7/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" alt="inst"><img src="img/insta.png"></a></div>
+				<div class="tiktokImg"><a href="https://www.tiktok.com/@hihc27?_r=1&_t=ZS-96GVSWVyZjI" alt="tiktok"><img src="img/tiktok.jpg"></a></div>
+			</div>
+		</div>
+		<div class="topBtn">
+			<a href="#top" alt="btn"><img src="img/topBtn.jpg"></a>
+		</div>
+	</section>
+
+	<footer>
+		<nav class="link">
+			<ul>
+				<li class="line"><a href="#works" alt="btn">WORKS</a></li>
+				<li class="line"><a href="#about" alt="btn">ABOUT</a></li>
+				<li class="line"><a href="#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+	</footer>
+	<script>
+		$(function(){
+		  $('a[href^="#"]').click(function(){
+		    var speed = 500;
+		    var href= $(this).attr("href");
+		    var target = $(href == "#" || href == "" ? 'html' : href);
+		    var position = target.offset().top-100;
+		    
+		    $("html, body").animate({scrollTop:position}, speed, "swing");
+		    return false;
+		  });
+		});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.main-slider', {
+    loop: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    autoplay: {
+      delay: 3000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+</body>
+
+</html>

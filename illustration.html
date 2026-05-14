@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="髙橋仁美のポートフォリオ">
+<link rel="shortcut icon" href="img/favicon.ico">
+<title>HITOMI　PORTFOLIO</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!--jQuery本体-->
+<!--<script src="js/jquery.bxslider.min.js"></script>-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/function.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<header id="illust_home">
+		<nav class="follow_nav">
+			<ul>
+				<li class="line" title="WORKS"><a href="index.html#works" alt="btn">WORKS</a></li>
+				<li class="line" title="ABOUT"><a href="index.html#about" alt="btn">ABOUT</a></li>
+				<li class="line" title="CONTACT"><a href="index.html#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+		<h1 class="page_top"><a href="index.html#home" alt="topBtn">TAKAHASHI HITOMI</a></h1>
+	</header>
+
+		<div class="scroller">
+			<section id="top_illust" class="video-section">
+			<div id="move">
+						<video src="img/太陽.mp4" autoplay muted loop></video>
+				</div>
+				<div class="illust_title"><p>めらめら</p></div>
+			</section>
+
+			<section class="video-section">
+			<div class="video-wrap">
+					<video src="img/火.mp4" autoplay muted loop></video>
+				</div>
+				
+				<div class="illust_title"><p>ゆらゆら</p></div>
+			</section>
+
+			<section class="video-section">
+			<div class="video-wrap">
+					<video src="img/はとぽっぽ.mov" autoplay muted loop></video>
+				</div>
+				
+				<div class="illust_title"><p>はとぽっぽ</p></div>
+			</section>
+
+		<section class="video-section">
+			<div class="video-wrap">
+						<video src="img/ひとみ.mov" autoplay muted loop></video>
+			</div>
+			<div class="illust_title"><p>うぃんく</p></div>
+			</section>
+
+	<div class="topBtn_illustration">
+		<a href="index.html" alt="btn"><img src="img/topBtn.jpg" alt="btn"></a>
+	</div>
+
+	<footer class="illust_footer">
+		<nav class="link">
+			<ul>
+				<li class="line"><a href="index.html#works" alt="btn">WORKS</a></li>
+				<li class="line"><a href="index.html#about" alt="btn">ABOUT</a></li>
+				<li class="line"><a href="index.html#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+	</footer>
+	</div><!-- scroller -->
+
+	<script>
+		$(function(){
+		  $('a[href^="#"]').click(function(){
+		    var speed = 500;
+		    var href= $(this).attr("href");
+		    var target = $(href == "#" || href == "" ? 'html' : href);
+		    var position = target.offset().top-100;
+		    
+		    $("html, body").animate({scrollTop:position}, speed, "swing");
+		    return false;
+		  });
+		});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+const scroller = document.querySelector('.scroller');
+const header = document.getElementById('illust_home');
+let timer;
+
+scroller.addEventListener('scroll', () => {
+
+    header.classList.remove('show');
+
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+
+        header.classList.add('show');
+    }, 1000);
+});
+
+</script>
+</body>
+
+</html>

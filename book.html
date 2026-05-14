@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="髙橋仁美のポートフォリオ">
+<link rel="shortcut icon" href="img/favicon.ico">
+<title>HITOMI　PORTFOLIO</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!--jQuery本体-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/function.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<div id="wrapper">
+<body class="is-book-page">
+	<header id="home">
+		<nav class="follow_nav">
+			<ul>
+				<li class="line" title="WORKS"><a href="index.html#works" alt="btn">WORKS</a></li>
+				<li class="line" title="ABOUT"><a href="index.html#about" alt="btn">ABOUT</a></li>
+				<li class="line" title="CONTACT"><a href="index.html#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+		<h1 class="page_top"><a href="index.html#home" alt="btn">TAKAHASHI HITOMI</a></h1>
+
+		<h2 class="page_right_title"><a href="#" alt="絵本の世界">絵本の世界</a></h2>
+	</header>
+
+	<section id="conteiner"class="scroll-fade">
+		<div>
+			<div class="imgBox"><img src="img/book_01.jpg"></div>
+		</div>
+		<div class="textBox_works">
+			<h3>CONCEPT</h3>
+			
+			<p>「色彩とキャラクターを通して、遊び心と上品さがある 絵本の世界を感じられるチラシ」キャラクターの遊びと余白のデザインで大人が見に行けるデザインへ。</p>
+			<h3 class="blue">TARGET</h3>
+			<p>絵本・イラスト作品好きな30代　／　アート展巡りやイラストが趣味の社会人　／　美術館・ギャラリーを日常的に訪れる層 </p>
+		</div>
+
+	</section>
+
+	<section id="conteiner"class="reverse scroll-fade">
+		<div class="textBox_works">
+			<h3>CONCEPT</h3>
+			
+			<p>美術展でのグッズ展開想定ととした限定セット。
+絵本とソフビをセットにすることで、読む・飾る・手に取るという体験まで含めた世界観を提案する。</p>
+			<h3 class="blue">TARGET</h3>
+			<p>20代～30代男女　／　絵本やアート、キャラクター雑貨が好きな大人</p>
+		</div>
+
+		<div class="imgBox"><img src="img/book_02.jpg"></div>
+
+	</section>
+
+	<section id="conteiner" class="scroll-fade">
+		<div class="imgBox">
+			<img src="img/book_03.jpg" alt="pic">
+			
+		</div>
+		<div class="textBox_works">
+			<h3>CONCEPT</h3>
+			<p>バナー広告WEBページを開いた瞬間、まるで絵本の1ページをめくったようなワクワク感と余韻を与え、「もっと見たい」「展示を知りたい」と自然に興味を引くことを目的としたデザイン。
+</p>
+			<h3 class="blue">TARGET</h3>
+			<p>ネットサーフィン、SNS好きな10代、絵本・イラスト作品が好きな20代を中心とした社会人。</p>
+		</div>
+
+		
+	</section>
+
+	<div class="topBtn_works">
+		<a href="index.html" alt="btn"><img src="img/topBtn.jpg" alt="btn"></a>
+	</div>
+</div><!------------ wrapper --------------->
+	<footer>
+		<nav class="link">
+			<ul>
+				<li class="line"><a href="index.html#works" alt="btn">WORKS</a></li>
+				<li class="line"><a href="index.html#about" alt="btn">ABOUT</a></li>
+				<li class="line"><a href="index.html#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+	</footer>
+	<script>
+		$(function(){
+		  $('a[href^="#"]').click(function(){
+		    var speed = 500;
+		    var href= $(this).attr("href");
+		    var target = $(href == "#" || href == "" ? 'html' : href);
+		    var position = target.offset().top-100;
+		    
+		    $("html, body").animate({scrollTop:position}, speed, "swing");
+		    return false;
+		  });
+		});
+</script>
+
+</body>
+
+</html>

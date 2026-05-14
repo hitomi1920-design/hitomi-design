@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="髙橋仁美のポートフォリオ">
+<link rel="shortcut icon" href="img/favicon.ico">
+<title>HITOMI　PORTFOLIO</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!--jQuery本体-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/function.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="is-clinic-page">
+
+<div id="wrapper">
+
+	<header id="home">
+		<nav class="follow_nav">
+			<ul>
+				<li class="line" title="WORKS"><a href="index.html#works" alt="btn">WORKS</a></li>
+				<li class="line" title="ABOUT"><a href="index.html#about" alt="btn">ABOUT</a></li>
+				<li class="line" title="CONTACT"><a href="index.html#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+		<h1 class="page_top"><a href="index.html#home" alt="btn">TAKAHASHI HITOMI</a></h1>
+
+		<h2 class="page_right_title clinic"><a href="#" alt="フォントの世界">Clinicの世界</a></h2>
+	</header>
+
+	<section id="conteiner" class="scroll-fade">
+		<div>
+			<div class="imgBox"><img src="img/clinic_01.jpg" alt="精神科フライヤー"></div>
+		</div>
+		<div class="textBox_works">
+			<h3>CONCEPT</h3>
+			
+			<p>「やさしく、安心して通える心のクリニック。カラーリングは
+疲れた社会人や学生が直感的に内容が分かるレイアウト構成により集客を呼ぶフライヤーとする。</p>
+			<h3 class="blue">TARGET</h3>
+			<p>心療内科やメンタルケアの利用を検討している人。
+ストレス・不安・睡眠問題を抱える20代後半から30代。
+一人暮らしをしていている社会人。初めて受診する患者（安心感を求める層）</p>
+		</div>
+
+	</section>
+
+	<section id="conteiner" class="reverse scroll-fade">
+		<div class="textBox_works">
+			<h3>CONCEPT</h3>
+			
+			<p>― 大切な家族に、やさしい医療を ―飼い主と動物、どちらの不安もやさしく包み込む「 町のかかりつけ動物病院 」のWebサイト
+</p>
+			<h3 class="blue">TARGET</h3>
+			<p>20～50代の飼い主。初診・セカンドオピニオンを検討している人。犬・猫だけでなくうさぎ・爬虫類などエキゾチックアニマルを飼っている人。
+「大型病院より、丁寧に診てくれそうな病院」を探している層。</p>
+		</div>
+
+		<div class="imgBox"><img src="img/clinic_02.jpg" alt="動物病院ウェブサイト"></div>
+
+	</section>
+		<div class="topBtn_font">
+			<a href="index.html" alt="btn"><img src="img/topBtn.jpg" alt="btn"></a>
+		</div>
+
+	<footer>
+		<nav class="link">
+			<ul>
+				<li class="line"><a href="index.html#works" alt="btn">WORKS</a></li>
+				<li class="line"><a href="index.html#about" alt="btn">ABOUT</a></li>
+				<li class="line"><a href="index.html#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+
+</div><!----------------- wrapper --------------------->
+
+	</footer>
+	<script>
+		$(function(){
+		  $('a[href^="#"]').click(function(){
+		    var speed = 500;
+		    var href= $(this).attr("href");
+		    var target = $(href == "#" || href == "" ? 'html' : href);
+		    var position = target.offset().top-100;
+		    
+		    $("html, body").animate({scrollTop:position}, speed, "swing");
+		    return false;
+		  });
+		});
+</script>
+
+</body>
+
+</html>

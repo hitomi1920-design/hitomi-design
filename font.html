@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="髙橋仁美のポートフォリオ">
+<link rel="shortcut icon" href="img/favicon.ico">
+<title>HITOMI　PORTFOLIO</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!--jQuery本体-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/function.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<div id="wrapper">
+
+<body class="is-font-page">
+	<header id="home">
+		<nav class="follow_nav">
+			<ul>
+				<li class="line" title="WORKS"><a href="index.html#works" alt="btn">WORKS</a></li>
+				<li class="line" title="ABOUT"><a href="index.html#about" alt="btn">ABOUT</a></li>
+				<li class="line" title="CONTACT"><a href="index.html#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+		<h1 class="page_top"><a href="index.html#home" alt="btn">TAKAHASHI HITOMI</a></h1>
+
+		<h2 class="page_right_title font"><a href="#" alt="フォントの世界">フォントの世界</a></h2>
+	</header>
+
+	<section id="conteiner" class="scroll-fade">
+		<div>
+			<div class="imgBox"><img src="img/font_01.jpg" alt="font"></div>
+		</div>
+		<div class="textBox_works">
+			<h3>CONCEPT</h3>
+			
+			<p>女の子の髪の毛で文字をつくる！自分自身の長い髪をモチーフにしたDTPやWEB広告に使えるフォント</p>
+			<h3 class="blue">TARGET</h3>
+			<p>少女の髪の毛が髪らしく見えるように不揃いな線を描き、可読性を高めるためにフレームにいれて作成。かわいい　／　ぽっぷ　／　おしゃれ</p>
+		</div>
+
+	</section>
+
+	<section id="conteiner" class="reverse scroll-fade">
+		<div class="textBox_works">
+			<h3>CONCEPT</h3>
+			
+			<p>美味しそうなチョコレートのフォント</p>
+			<h3 class="blue">TARGET</h3>
+			<p>様々なチョコレートを連想させられるチョコフォントを目指し作成。美味しそうな　／　ぽっぷ　／　可読性</p>
+		</div>
+
+		<div class="imgBox"><img src="img/font_02.jpg" alt="chocoFont"></div>
+
+	</section>
+		<div class="topBtn_font">
+			<a href="index.html" alt="btn"><img src="img/topBtn.jpg" alt="btn"></a>
+		</div>
+
+	<footer>
+		<nav class="link">
+			<ul>
+				<li class="line"><a href="index.html#works" alt="btn">WORKS</a></li>
+				<li class="line"><a href="index.html#about" alt="btn">ABOUT</a></li>
+				<li class="line"><a href="index.html#contact" alt="btn">CONTACT</a></li>
+			</ul>
+		</nav>
+
+</div><!----------------- wrapper --------------------->
+
+	</footer>
+	<script>
+		$(function(){
+		  $('a[href^="#"]').click(function(){
+		    var speed = 500;
+		    var href= $(this).attr("href");
+		    var target = $(href == "#" || href == "" ? 'html' : href);
+		    var position = target.offset().top-100;
+		    
+		    $("html, body").animate({scrollTop:position}, speed, "swing");
+		    return false;
+		  });
+		});
+</script>
+
+</body>
+
+</html>
